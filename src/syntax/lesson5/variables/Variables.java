@@ -36,5 +36,20 @@ public class Variables {
         boolean booleanVariable = true;
         booleanVariable = false;
         System.out.println("The boolean variable: " + booleanVariable);
+
+        //casting
+        short varForCasting = byteNumber;
+        System.out.println("After casting varForCasting: " + varForCasting);
+
+        int intNewVar = varForCasting;
+        System.out.println("After casting intNewVar: " + intNewVar);
+
+        int intVariable = 6_000_012;
+        byte byteNewVar = (byte) intVariable;
+        System.out.println("After casting int to byte: " + byteNewVar);
+
+        var doubleVar = 4.18;
+        int newInteger = (int) doubleVar;
+        System.out.println("After casting double to int: " + newInteger);
     }
 }
