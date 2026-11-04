@@ -30,5 +30,15 @@ public class Operators {
         boolean isLess = a < b;
         boolean isLessOrEqual = a <= b;
 
+        //and{&&}, or(||)
+
+        boolean aIsGreatThanB = a > b;
+        boolean aIsEqualB = a == b;
+
+        boolean logicalAnd = aIsGreatThanB && aIsEqualB;
+        boolean logicalOr = aIsGreatThanB || aIsEqualB;
+
+        System.out.println("The result a > b and a == b: " + logicalAnd);
+        System.out.println("The result a > b or a == b: " + logicalOr);
     }
 }
